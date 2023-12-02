@@ -6,7 +6,6 @@ import { AiFillCloseCircle } from "react-icons/ai";
 import { PiDotsNineBold } from "react-icons/pi";
 
 
-
 const Navbar = () => {
 
   const[navBar, setNavbar] = useState("menu");
@@ -34,26 +33,19 @@ const Navbar = () => {
           <li className='navList'>
             Destinations
           </li>
-      </ul>
-      <ul>
           <li className='navList'>
             About Us
           </li>
-      </ul>
-      <ul>
           <li className='navList'>
             Testimonial
-          </li>
-      </ul>
-      <ul>
-          <li className='navList'>
+          </li><li className='navList'>
             Gallery
           </li>
       </ul>
         <AiFillCloseCircle className='icon closeIcon'
         onClick={removeNavbar}/>
     </div>
-    <button className="signUpBtn btn">Sign Up</button>
+    <button className="signUpBtn btn">lOGIN</button>
     <PiDotsNineBold className='icon menuIcon' 
     onClick={showNavbar}/>
 

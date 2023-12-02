@@ -2,6 +2,14 @@ import React from 'react'
 import './Home.css'
 
 import Video from '../../Assets/seagolden.mp4'
+
+
+import image1 from '../../Assets/img/img1.jpg'
+import image2 from '../../Assets/img/img2.jpg'
+import image3 from '../../Assets/img/img3.jpg'
+import image4 from '../../Assets/img/img4.jpg'
+
+
 import { AiOutlineSwapRight } from "react-icons/ai";
 
 
@@ -13,7 +21,7 @@ const Home = () => {
       </div>
 
     <div className="sectionText">
-      <h1>Unlock Your Dream Travel Destinations With Us!</h1>
+      <h1>Visit Your Dream Travel Destinations With Us!</h1>
       <p>
         Discover World's most popular destinations and have the time of your life with your loved ones
       </p>
@@ -21,15 +29,6 @@ const Home = () => {
         GET STARTED <AiOutlineSwapRight className='icon'/>
 
       </button>
-    </div>
-
-    <div className="popularPlaces">
-      <div className="content">
-        <h3>Popular Places</h3>
-        <div className="images flex">
-          {/* x */}
-        </div>
-      </div>
     </div>
 
     </div>
