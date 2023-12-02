@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Navbar.css'
 
 import { SiYourtraveldottv } from "react-icons/si";
@@ -8,13 +8,28 @@ import { PiDotsNineBold } from "react-icons/pi";
 
 
 const Navbar = () => {
+
+  const[navBar, setNavbar] = useState("menu");
+
+  const showNavbar = () => {
+    setNavbar("menu showNavbar");
+  }
+
+  const removeNavbar = () => {
+    setNavbar("menu");
+  }
+
+
+
+
+
   return <div className='navBar'>
     <div className='logoDiv'>
-    <SiYourtraveldottv className='icon' />
-    <span>AROUND-Travel</span>
+    
+    <span>AR<SiYourtraveldottv className='icon' />UND-Travel</span>
     </div>
 
-    <div className='menu'>
+    <div className={navBar}>
       <ul>
           <li className='navList'>
             Destinations
@@ -35,10 +50,12 @@ const Navbar = () => {
             Gallery
           </li>
       </ul>
-        <AiFillCloseCircle className='icon'/>
+        <AiFillCloseCircle className='icon closeIcon'
+        onClick={removeNavbar}/>
     </div>
     <button className="signUpBtn btn">Sign Up</button>
-    <PiDotsNineBold className='icon' />
+    <PiDotsNineBold className='icon menuIcon' 
+    onClick={showNavbar}/>
 
   </div>
 }

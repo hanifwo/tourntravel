@@ -15,14 +15,14 @@ function App() {
   return (
     <div>
       <Navbar/>
-      {/* <Home/>
+      <Home/>
       <Middle/>
       <Destinations/>
       <Portofolio/>
       <Reviews/>
       <Questions/>
       <Subscribe/>
-      <Footer/> */}
+      <Footer/>
     </div>
   )
 }
